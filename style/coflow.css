@@ -1,0 +1,70 @@
+
+.coflow-base {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 24px;
+}
+
+.coflow-right-to-left {
+    -webkit-animation: coflow-right-to-left 4s linear;
+}
+
+.coflow-severe-earthquake {
+    -webkit-animation: coflow-severe-earthquake 4s linear;
+}
+
+.coflow-done {
+    -webkit-transform: scale(2);
+    font-size: 128px;
+    -webkit-animation: coflow-done 1s linear;
+}
+
+
+
+
+@-webkit-keyframes coflow-right-to-left {
+    100% {
+        left: -500px;
+    }
+}
+
+@-webkit-keyframes coflow-severe-earthquake {
+    0% { margin-top: 5px; }
+    5% { margin-top: -3px; }
+    10% { margin-top: 4px; }
+    15% { margin-top: 2px; }
+    20% { margin-top: -3px; }
+    25% { margin-top: 5px; }
+    30% { margin-top: -8px; }
+    35% { margin-top: 10px; }
+    40% { margin-top: 5px; }
+    45% { margin-top: -3px; }
+    50% { margin-top: 4px; }
+    55% { margin-top: 5px; }
+    60% { margin-top: -3px; }
+    65% { margin-top: 4px; }
+    70% { margin-top: 2px; }
+    75% { margin-top: -3px; }
+    80% { margin-top: 5px; }
+    85% { margin-top: -8px; }
+    90% { margin-top: 10px; }
+    95% { margin-top: 5px; }
+    100% {
+        left: -500px;
+    }
+}
+
+
+
+@-webkit-keyframes coflow-done {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Test | nicomment.js</title>
+        
+        <link rel="stylesheet" type="text/css" href="../style/coflow.css" />
+        <script src="../src/coflow.js"></script>
+        <script>
+        window.onload = function() {
+
+            var msgList = [
+                "hogehogehoge",
+                "wwwwwwwwwwwwwwwwwwwwwwwww",
+                "8888888888888888888888888",
+                "激震",
+                "red だよ～",
+                "green だよ～",
+                "blue だよ～",
+                "ドン",
+                "<script>",
+            ];
+            
+            setInterval(function() {
+                var i = (Math.random()*msgList.length)|0;
+                var msg = msgList[i];
+                coflow.comment(msg);
+            }, 500);
+        };
+        </script>
+    </head>
+    <body>
+        <h1></h1>
+    </body>
+</html>
