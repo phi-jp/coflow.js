@@ -1,0 +1,11 @@
+{
+  "name": "coflow.js",
+  "version": "0.0.1",
+  "main": "[src/coflow.js, style/coflow.css]",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test"
+  ]
+}
