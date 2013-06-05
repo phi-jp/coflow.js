@@ -1,4 +1,9 @@
 
+
+#coflow {
+    pointer-events:none;
+}
+
 .coflow-base {
     position: absolute;
     margin: 0;
