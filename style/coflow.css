@@ -1,6 +1,7 @@
 
 
 #coflow {
+    font-family: 'Hiragino';
     pointer-events:none;
 }
 
@@ -9,15 +10,23 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    text-shadow:
+        0px 0px 2px #222,
+        0px 0px 2px #444,
+        0px 0px 8px #888,
+        0px 0px 8px #444;
+    letter-spacing: 0.3em;
 }
 
 .coflow-right-to-left {
-    -webkit-animation: coflow-right-to-left 4s linear;
+    -webkit-animation: coflow-right-to-left 5500ms linear;
 }
 
 .coflow-severe-earthquake {
-    -webkit-animation: coflow-severe-earthquake 4s linear;
+    -webkit-animation: coflow-severe-earthquake 5500ms linear;
 }
 
 .coflow-done {
