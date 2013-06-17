@@ -49,7 +49,7 @@
             return true;
         },
         execute: function(msg, param) {
-            var parma = param || {};
+            var param = param || {};
             
             var elm = new coflow.Element(msg, "coflow-right-to-left");
             var x = window.innerWidth;
