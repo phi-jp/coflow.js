@@ -7,7 +7,7 @@
     global.coflow = {
         gimmicks: [],
 
-        comment: function(msg) {
+        comment: function(msg, param) {
             if (!this.coflowBody) {
                 var coflowBody = this.coflowBody = document.createElement("div");
                 coflowBody.style.left = "0px";
@@ -24,7 +24,7 @@
                 var gimmick = this.gimmicks[i];
 
                 if (gimmick.condition(msg)) {
-                    gimmick.execute(msg);
+                    gimmick.execute(msg, param);
                     break;
                 }
             }
@@ -48,10 +48,16 @@
         condition: function(msg) {
             return true;
         },
-        execute: function(msg) {
+        execute: function(msg, param) {
+            var parma = param || {};
+            
             var elm = new coflow.Element(msg, "coflow-right-to-left");
             var x = window.innerWidth;
             var y = (Math.random()*window.innerHeight)|0;
+            
+            if (param.color) {
+                elm.element.style.color = param.color;
+            }
             
             elm.setPosition(x, y);
         },

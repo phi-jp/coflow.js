@@ -31,7 +31,9 @@
             setInterval(function() {
                 var i = (Math.random()*msgList.length)|0;
                 var msg = msgList[i];
-                coflow.comment(msg);
+                coflow.comment(msg, {
+//                    color: "red",
+                });
             }, 500);
         };
         </script>
