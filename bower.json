@@ -1,7 +1,7 @@
 {
   "name": "coflow.js",
   "version": "0.0.3",
-  "main": "[src/coflow.js, style/coflow.css]",
+  "main": ["src/coflow.js", "style/coflow.css"],
   "ignore": [
     "**/.*",
     "node_modules",
